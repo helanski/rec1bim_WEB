@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="rec.css">
+    <link rel="stylesheet" href="media-query.css">
+</head>
+<body>
+    <div class="nome-aluno">
+        <h1>GABRIELE</h1>
+    </div>
+        
+    <main>
+        <section class="login">
+            <div class="imagem1"></div>
+
+            <div class="imagem2"></div>
+
+            <div class="formulario">
+                <h1>LOGIN ESTUDANTE</h1>
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class="material-icons">person</i>
+                        <input type="text" name="nome" id="inome" placeholder="seu nome" required minlength="8" maxlength="20">
+                        <label for="inome">Nome</label>
+                    </div>
+                    <div class="campo">
+                        <i class="material-icons">email</i>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" required maxlength="30">
+                        <label for="iemail">E-mail</label>
+                    </div>
+
+                    <div class="campo">
+                        <i class="material-icons">phone</i>
+                        <input type="fone" name="fone" id="ifone" placeholder="seu telefone" required maxlength="30">
+                        <label for="ifone">Telefone</label>
+                    </div>
+
+                    <input type="submit" value="ENTRAR">
+                    <input type="submit" value="CANCELAR">
+
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    <section>
+        <footer>
+            <p>&copy; IFPR Campus Cascavel</p>
+    
+            <a><img src="facebook.svg"></a>        
+            <a><img src="instagram.svg"></a>
+            <a><img src="twitter.svg"></a> 
+    
+         </footer>
+    </section>
+
+    <script>
+        feather.replace();
+    </script>
+
+</body>
+</html>
